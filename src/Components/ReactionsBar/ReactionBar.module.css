@@ -1,0 +1,36 @@
+.Main {
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: transform 0.3s;
+  transform: translateY(0);
+}
+li {
+  width: 33.333333%;
+  float: left;
+  background-color: #77d7b9;
+  height: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  
+}
+li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 15%;
+
+}
+li > a > span {
+     font-size: 10px;
+
+}

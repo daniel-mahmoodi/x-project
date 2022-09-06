@@ -1,0 +1,11 @@
+.Main {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(100px));
+  transition: transform 0.5s;
+  padding: 0px;
+}
+.Main:hover {
+  transform: translateY(0);
+}

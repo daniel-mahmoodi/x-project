@@ -1,0 +1,25 @@
+.Main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #77d7b9;
+  color: white;
+  padding: 0.8em;
+  margin: 0px;
+}
+.Date {
+  display: block;
+  text-align: center;
+}
+.Day {
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.3);
+}
+.Month {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.Year {
+  font-size: 12px;
+}
