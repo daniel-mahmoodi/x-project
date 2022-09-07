@@ -4,7 +4,7 @@ import Date from "./Components/Date/Date";
 // import Date2 from "./Components/Date/Date2";
 import Main from "./Layout/Main";
 import Data from "./Layout/Data";
-import Description from "./Components/Describtion/Describtion";
+import Description from ". /Components/Describtion/Describtion";
 // import Data2 from "./Layout/Data2";
 import CardProvider from "./store/CardProvider";
 
@@ -15,10 +15,11 @@ function App() {
         <Date />
         <Data />
       </Main>
-      <Main>
+      {/* <Main>
         <Date />
         <Description />
-      </Main>
+        <Description />
+      </Main> */}
     </CardProvider>
   );
 }
