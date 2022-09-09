@@ -6,7 +6,6 @@ const MockData = [
     title: "Boxing icon has the will for a couple more fights",
     content:
       " The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.",
-    readMoreIcone: '{"\u2192"}',
   },
   {
     date: { day: "12", month: "Aug", year: "2016" },

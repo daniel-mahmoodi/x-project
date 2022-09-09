@@ -15,21 +15,25 @@ const Contents = (props) => {
   const toggleHasHiddenHandler = () => {
     ctx.hasHidden();
   };
+  const threeDots =
+    props.type === 1 ? (
+      <BsThreeDots
+        className={`${classes.Dot} ${checkForType}`}
+        onClick={toggleHasHiddenHandler}
+      />
+    ) : (
+      ""
+    );
   console.log("content");
   return (
     <div className={`${classes.Main} ${checkForType} ${MouseOverHandler}`}>
-      <div className={`${classes.ThreeDots} ${checkForType}`}>
-        <BsThreeDots
-          className={`${classes.Dot} ${checkForType}`}
-          onClick={toggleHasHiddenHandler}
-        />
-      </div>
+      <div className={`${classes.ThreeDots} ${checkForType}`}>{threeDots}</div>
       <p className={`${classes.Name} ${checkForType}`}>{DataType.name}</p>
       <h1 className={`${classes.Title} ${checkForType}`}>{DataType.title}</h1>
       <p className={`${classes.Content} ${checkForType}`}>{DataType.content}</p>
       {props.type === 2 && (
         <button className={`${classes.MoreContent} ${checkForType}`}>
-          Read more <span>{DataType.readMoreIcone}</span>
+          Read more <span>{"\u2192"}</span>
         </button>
       )}
     </div>
