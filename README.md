@@ -1,8 +1,10 @@
 # Document related to Arfa internship project:
 
-link for : [demo](https://daniel-x-project.netlify.app/).
+link for [demo](https://daniel-x-project.netlify.app/).
 
-## more details:
+![This is an image](/asset/imgOfProject.JPG)
+
+## More details:
 
 This project has tried to divide all the components into smaller and reusable components, and raw CSS has been used for its styling.
 JavaScript codes are written based on React library. And the effort is to add Typescript to it in the future.
