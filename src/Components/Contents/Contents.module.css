@@ -1,24 +1,56 @@
-.Main {
+.Main.Type1 {
   background-color: white;
   min-height: 200px;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.6);
   padding: 1em;
-  z-index: 1;
+  z-index: 10;
+  position: absolute;
+  /* bottom: 0;
+  left: 0; */
+  width: 100%;
+  /* transform: translateY(100px);
+  transition: transform 0.5s; */
+  /* padding: 0px; */
 }
-.threeDots {
+/* .Main.Type1.MouseOver,.Main.Type2.MouseOver {
+  transform: translateY(0);
+} */
+.Main.Type2 {
+  /* background-color: white; */
+  min-height: 200px;
+  /* position: relative; */
+  overflow: hidden;
+  /* box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.6); */
+  padding: 1em;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100px);
+  transition: transform 0.5s;
+}
+.MouseOverType2 {
+  transform: translateY(0px);
+  transition: transform 0.5s;
+}
+/* .MouseOutType2 {
+} */
+.ThreeDots.Type1 {
   position: absolute;
   z-index: 1;
   top: 10px;
-  right: 16px;
+  right: 50px;
   width: 25px;
   text-align: center;
   cursor: pointer;
   padding: 0;
   margin: 0;
 }
-.dot {
+.Dot.Type1 {
   width: 30px;
   height: 30px;
   color: rgba(0, 0, 0, 0.5);
@@ -26,16 +58,54 @@
   display: inline-block;
   border-radius: 50%;
 }
-.name {
+.Name.Type1 {
   font-size: 12px;
   padding: 0;
   margin: 0;
 }
-.title {
+.Title.Type1 {
   margin-top: 10px;
-  color: lighten(black, 50%);
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
-.content {
+.Content.Type1 {
   height: 70px;
   /* margin: 0 0 10px 0; */
+}
+
+.Name.Type2 {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255);
+}
+.Title.Type2 {
+  margin-top: 10px;
+  color: rgba(255, 255, 255);
+}
+.Content.Type2 {
+  height: 70px;
+  color: rgba(255, 255, 255);
+}
+.MoreContent.Type2 {
+  color: rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.MoreContent.Type2 span {
+  visibility: hidden;
+  opacity: 0;
+  padding: 2px;
+  transition: all 0.5s;
+}
+.MoreContent.Type2:hover span {
+  visibility: visible;
+  opacity: 1;
 }

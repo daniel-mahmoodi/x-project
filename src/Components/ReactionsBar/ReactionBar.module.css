@@ -1,15 +1,14 @@
-.Main {
+.Main.Type1 {
   padding: 0px;
+  margin: 0;
   text-align: center;
-  position: relative;
-  top: 0;
+  bottom: 0;
   left: 0;
+  z-index: 10;
+  position: absolute;
   width: 100%;
-  z-index: 1;
-  transition: transform 0.3s;
-  transform: translateY(0);
 }
-li {
+.Main.Type1 li {
   width: 33.333333%;
   float: left;
   background-color: #77d7b9;
@@ -19,18 +18,53 @@ li {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  
 }
-li > a {
+.Main.Type1 li > div,
+.Main.Type2 li > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   margin-bottom: 15%;
-
 }
-li > a > span {
-     font-size: 10px;
+.Main.Type1 li > div > span {
+  font-size: 10px;
+}
+/* Type2 */
+.Main.Type2 {
+  position: absolute;
+  display: flex;
+  color: white;
+  padding: 0.8rem;
+  margin: -40rem 0;
+  padding: 6px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
 
+.Main.Type2 li {
+  padding: 0.1rem 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.Main.Type2 li > div > span {
+  font-size: 8px;
+  position: relative;
+  opacity: 0;
+  top: 0;
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+.MouseOverType2 {
+  position: relative;
+  opacity: 1 !important;
+  top: 0;
+  transform: translateY(0px) !important;
+  transition: all 0.5s;
 }

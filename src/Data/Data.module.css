@@ -1,0 +1,33 @@
+.Main.Type1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(-150px);
+  transition: transform 0.5s;
+  padding: 0px;
+}
+.Main.Type1.MouseOver {
+  transform: translateY(-240px);
+}
+/* type2 */
+.Main.Type2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+}
+.Main.Type2 > div {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+.Main.Type2.MouseOver > div {
+  transform: translateY(-100px);
+}
+.ReactionShow{
+  transform: translateY(0px);
+  transition: transform 0.5s;
+}
+.ReactionFade{
+  transform: translateY(100px);
+  transition: transform 0.5s;
+}

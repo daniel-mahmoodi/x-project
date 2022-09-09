@@ -1,4 +1,4 @@
-.Main {
+.Main.Type1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,19 +7,37 @@
   padding: 0.8em;
   margin: 0px;
 }
-.Date {
+.Main.Type2 {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  color: white;
+  font-weight: 400;
+  padding: 0.8em;
+  margin: 0px;
+}
+.Date.Type1 {
   display: block;
   text-align: center;
 }
-.Day {
+.Date.Type1 > * {
+  font-size: 12px;
+}
+.Date.Type2 {
+  display: flex;
+  text-align: center;
+}
+
+.Date.Type2 > * {
+  padding-right: 0.3em;
+  font-size: 10px;
+}
+.Day.Type1 {
   font-weight: 700;
   font-size: 24px;
   text-shadow: 3px 2px rgba(0, 0, 0, 0.3);
 }
-.Month {
+.Month.Type1 {
   text-transform: uppercase;
-  font-size: 12px;
-}
-.Year {
-  font-size: 12px;
 }
